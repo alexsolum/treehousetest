@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Schoolbell&family=Seaweed+Script&family=Staatliches&display=swap');
+
+/*
+font-family: 'Bungee Shade', cursive;
+font-family: 'Schoolbell', cursive;
+font-family: 'Seaweed Script', cursive;
+font-family: 'Staatliches', cursive;
+'*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: 'Staatliches', cursive;
+  text-align:center;
+  display: grid;
+  grid-template-columns: 70% auto;
+  grid-template-rows: 130px auto 60px;
+  grid-template-areas: "header header"
+                        "main sidebar"
+                        "footer footer";
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #23335d;
+  /* margin-top: 0; */
+}
+
+header {
+  background-color: #23335d;
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  background-color: rgb(0, 255, 234);
+  padding: 1em 0;
+  margin 1em;
+  grid-area: sidebar;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding: 10px;
+	background: #fff;
+  border-radius: 5px;
+	margin: 45px auto;
+  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+}
+
+.item {
+  color: #23335d;
+  padding: 15px;
+  margin: 5px;
+  background: rgb(191, 208, 212);
+  border-radius: 4px;
+  align-items: center;
+}
+
+.logo {
+  /* margin-right: auto; */
+  padding: 5px;
+}
+
+.name{
+  margin-right: auto;
+}
+
+.round-image {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 5px white solid;
+  display: flex;
+  flex-direction: row;
+}
+
+.round-image:hover {
+  transition: 0.5s;
+  transform: rotate(360deg);
+}
+
+footer {
+	background-color: #23335d;
+  padding: 1em 0;
+  margin 1em;
+  color: white;
+  grid-area: footer;
+}
+
+/* Media queries */
+@media (min-width: 769px) {
+}
